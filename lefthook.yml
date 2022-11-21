@@ -1,0 +1,5 @@
+# https://github.com/evilmartians/lefthook/tree/master/docs
+
+extends:
+  - themes/custom-theme/lefthook-theme.yml
+  - plugins/custom-plugin/lefthook-plugin.yml

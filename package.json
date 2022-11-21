@@ -1,0 +1,18 @@
+{
+  "name": "@gregrickaby/wordpress_project_starter",
+  "version": "1.0.0",
+  "description": "WordPress Project Starter",
+  "homepage": "https://github.com/gregrickaby/wordpress-project-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregrickaby/wordpress-project-starter.git"
+  },
+  "author": "Greg Rickaby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gregrickaby/wordpress-project-starter/issues"
+  },
+  "devDependencies": {
+    "@evilmartians/lefthook": "^1.2.1"
+  }
+}

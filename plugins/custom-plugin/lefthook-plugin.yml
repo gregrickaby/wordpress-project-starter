@@ -1,0 +1,13 @@
+# https://github.com/evilmartians/lefthook/tree/master/docs
+
+pre-commit:
+    commands:
+        eslint:
+            glob: '*.{js,jsx,ts,tsx}'
+            run: npx eslint {staged_files} --fix
+        prettier:
+            glob: '*.{js,jsx,ts,tsx,md,html,json,yml}'
+            run: npx prettier {staged_files} --write
+        php:
+            glob: '*.php'
+            run: plugins/custom-plugin/vendor/bin/phpcs {staged_files} --standard=plugins/custom-plugin/.phpcs.xml

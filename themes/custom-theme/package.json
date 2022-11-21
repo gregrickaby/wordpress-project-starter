@@ -1,0 +1,47 @@
+{
+	"name": "@gregrickaby/custom-theme",
+	"private": true,
+	"version": "1.0.0",
+	"description": "A custom theme",
+	"author": "Greg Rickaby",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"Classic Theme"
+	],
+	"homepage": "https://github.com/gregrickaby/wordpress-project-starter",
+	"repository": {
+		"type": "git",
+		"url": "github.com/gregrickaby/wordpress-project-starter"
+	},
+	"bugs": {
+		"url": "https://github.com/gregrickaby/wordpress-project-starter/issues"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^24.6.0",
+		"autoprefixer": "^10.4.13",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.19",
+		"postcss-preset-env": "^7.8.3",
+		"prettier": "^2.7.1",
+		"stylelint-config-prettier": "^9.0.4",
+		"tailwindcss": "^3.2.4"
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"dev": "wp-scripts start",
+		"format": "wp-scripts format",
+		"lint": "run-p lint:*",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:md:docs": "wp-scripts lint-md-docs",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js"
+	}
+}

@@ -1,0 +1,47 @@
+{
+  "name": "gregrickaby/wordpress-project-starter",
+  "description": "WordPress Project Starter",
+  "type": "project",
+  "license": "MIT",
+  "homepage": "https://github.com/gregrickaby/wordpress-project-starter",
+  "authors": [
+    {
+      "name": "Greg Rickaby",
+      "email": "greg@gregrickaby.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "config": {
+    "process-timeout": 600,
+    "platform": {
+      "php": "8.0"
+    },
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  },
+  "require": {
+    "wpackagist-plugin/advanced-custom-fields": "^6.0",
+    "wpackagist-plugin/block-manager": "^1.2",
+    "wpackagist-plugin/stream": "^3.9",
+    "wpackagist-plugin/wordpress-seo": "^19.0"
+  }
+}
