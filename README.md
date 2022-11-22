@@ -6,9 +6,9 @@ A simple starter for WordPress projects.
 
 ## Features
 
-- [Composer](https://getcomposer.org/) for plugin management
-- [WordPress Scripts](https://www.npmjs.com/package/@wordpress/scripts) for JavaScript and CSS bundling
-- [TailwindCSS](https://tailwindcss.com/) support in the Theme
+- [Composer](https://getcomposer.org/) for plugin management (but only version control a custom plugin)
+- [WordPress Scripts](https://www.npmjs.com/package/@wordpress/scripts) for JavaScript and CSS bundling in the custom theme
+- [TailwindCSS](https://tailwindcss.com/) support in the custom theme
 - [Lefthook](https://www.npmjs.com/package/lefthook) for pre-commit hooks
 - [Github Actions](https://docs.github.com/en/actions) for automated assertions and deployments via RSYNC
 
