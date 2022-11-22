@@ -22,6 +22,8 @@ For a new project, delete the `wp-content` directory and clone this repository i
 git clone https://github.com/gregrickaby/wordpress-project-starter wp-content
 ```
 
+You could also use this repository [as a template](https://github.com/gregrickaby/wordpress-project-starter/generate) for a new project.
+
 Run `npm i` to install the dependencies.
 
 ---
