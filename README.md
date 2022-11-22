@@ -31,9 +31,9 @@ Run `npm i` to install the dependencies.
 
 ## Linting
 
-This project uses ESLint, Stylelint, PHPCS, PHPCBF, and Prettier for code linting and formatting.
+This project uses ESLint, Stylelint, PHPCS, PHPCBF, and Prettier for code linting and formatting. It also has support for automatic fixing of many linting errors as you save via support for popular VS Code extensions.
 
-From the root of the repository, run the following commands:
+If needed, you can still lint from the CLI. From the root of the repository, run the following commands:
 
 `npm run format` - Formats all files using Prettier and PHPCBF
 
