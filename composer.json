@@ -2,7 +2,7 @@
   "name": "gregrickaby/wordpress-project-starter",
   "description": "WordPress Project Starter",
   "type": "project",
-  "license": "MIT",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/gregrickaby/wordpress-project-starter",
   "authors": [
     {
