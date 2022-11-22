@@ -32,9 +32,9 @@ This project uses ESLint, Stylelint, PHPCS, PHPCBF, and Prettier for code lintin
 
 From the root of the repository, run the following commands:
 
-`npm run format` - Formats all files using Prettier and PHPCBF.
+`npm run format` - Formats all files using Prettier and PHPCBF
 
-`npm run lint` - Runs ESLint, Stylelint, and PHPCS.
+`npm run lint` - Runs ESLint, Stylelint, and PHPCS
 
 Github Actions is also configured to lint code on each Pull Request. Learn more about configuring [branch projection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches) and [status checks](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/troubleshooting-required-status-checks).
 
