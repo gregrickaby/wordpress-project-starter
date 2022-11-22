@@ -1,0 +1,5 @@
+{
+  "phpsab.executablePathCS": "./vendor/bin/phpcs",
+  "phpsab.executablePathCBF": "./vendor/bin/phpcbf",
+  "phpsab.standard": "./.phpcs.xml"
+}
