@@ -51,6 +51,6 @@ To use this feature, you'll need to add the following secrets to Github:
 - `REMOTE_USER` - The username of the remote server
 - `REMOTE_PATH` - The path to the `/wp-content` directory on the remote server
 
-Learn how to [configure secrets with Github Actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets#using-encrypted-secrets-in-a-workflow).
+Learn how to [configure secrets with Github Actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets#using-encrypted-secrets-in-a-workflow) and more about [configuring RSYNC deployments](https://github.com/easingthemes/ssh-deploy).
 
 ---

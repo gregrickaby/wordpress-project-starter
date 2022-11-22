@@ -48,7 +48,7 @@ jobs:
           npm run build
 
       - name: SSH Deploy
-        uses: easingthemes/ssh-deploy@v2
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.REMOTE_PRIVATE_KEY }}
           ARGS: "-v -a -z -k"
