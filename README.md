@@ -1,16 +1,17 @@
 # WordPress Project Starter
 
-A simple starter for WordPress projects.
+An opinionated starter for WordPress projects.
 
 ---
 
 ## Features
 
-- [Composer](https://getcomposer.org/) for plugin management (but only version control a custom plugin)
+- [Composer](https://getcomposer.org/) for plugin management
 - [WordPress Scripts](https://www.npmjs.com/package/@wordpress/scripts) for JavaScript and CSS bundling in the custom theme
 - [TailwindCSS](https://tailwindcss.com/) support in the custom theme
 - [Lefthook](https://www.npmjs.com/package/lefthook) for pre-commit hooks
 - [Github Actions](https://docs.github.com/en/actions) for automated assertions and deployments via RSYNC
+- Linting support for popular VS Code extensions like ESLint, Stylelint, Prettier, and PHP Sniffer & Beautifier
 
 ---
 
