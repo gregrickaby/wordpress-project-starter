@@ -2,17 +2,33 @@
   "name": "@gregrickaby/wordpress_project_starter",
   "version": "1.0.0",
   "description": "WordPress Project Starter",
+  "author": "Greg Rickaby",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress"
+  ],
   "homepage": "https://github.com/gregrickaby/wordpress-project-starter#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gregrickaby/wordpress-project-starter.git"
   },
-  "author": "Greg Rickaby",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gregrickaby/wordpress-project-starter/issues"
   },
   "devDependencies": {
-    "@evilmartians/lefthook": "^1.2.1"
+    "@evilmartians/lefthook": "^1.2.1",
+    "@wordpress/scripts": "^24.6.0",
+    "npm-run-all": "^4.1.5",
+    "stylelint-config-prettier": "^9.0.4"
+  },
+  "scripts": {
+    "format": "wp-scripts format && composer run format",
+    "lint": "run-p lint:*",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "lint:php": "composer run lint",
+    "postinstall": "composer install"
   }
 }

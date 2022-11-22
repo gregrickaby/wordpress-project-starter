@@ -6,16 +6,12 @@ This is simply a placeholder for a custom WordPress theme. You could delete the 
 
 ## Installation
 
-`composer install && npm install`
+`npm i`
 
-## Linting
+---
 
-Open this directory in VS Code to enable real-time linting. You could also use the CLI to lint the theme:
+## Development
 
-`npm run lint`
-
-and
-
-`npm run format`
+`npm run dev` or `npm run start`
 
 ---

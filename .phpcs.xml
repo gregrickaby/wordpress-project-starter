@@ -11,14 +11,14 @@
 	<!-- Whenever possible, cache the scan results and re-use those for unchanged files on the next scan. -->
 	<arg name="cache"/>
 
-	<!-- Strip the filepaths down to the relevant bit. -->
-	<arg name="basepath" value="./"/>
-
 	<!-- Check up to 20 files simultaneously. -->
 	<arg name="parallel" value="20"/>
 
 	<!-- Show sniff codes in all reports. -->
 	<arg value="ps"/>
+
+	<!-- Include the WordPress ruleset. -->
+	<rule ref="WordPress"/>
 
 	<!-- Use WordPress "Extra" Coding Standards. -->
 	<rule ref="WordPress-Extra">
@@ -31,29 +31,6 @@
 	<!-- Use WordPress "Docs" Coding Standards. -->
 	<rule ref="WordPress-Docs" />
 
-	<!-- The minimum supported WordPress version. This should match what's listed in style.css. -->
-	<rule ref="WordPress.WP.DeprecatedFunctions">
-		<properties>
-			<property name="minimum_supported_version" value="5.8"/>
-		</properties>
-	</rule>
-
-	<!-- Verify that everything in the global namespace is prefixed with a plugin specific prefix.
-		 Multiple valid prefixes can be provided as a comma-delimited list. -->
-	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
-		<properties>
-			<property name="prefixes" type="array" value="CustomPlugin" />
-		</properties>
-	</rule>
-
-	<!-- Verify that the text_domain is set to the desired text-domain.
-		 Multiple valid text domains can be provided as a comma-delimited list. -->
-	<rule ref="WordPress.WP.I18n">
-		<properties>
-			<property name="text_domain" type="array" value="custom-plugin"/>
-		</properties>
-	</rule>
-
 	<!-- Use WordPress PHP Compatibility. -->
 	<rule ref="PHPCompatibilityWP"/>
 
@@ -63,8 +40,9 @@
 	<!-- Only sniff PHP files. -->
 	<arg name="extensions" value="php"/>
 
-	<!-- Only sniff the plugin. -->
-	<file>./</file>
+	<!-- Only sniff custom plugin & theme. -->
+	<file>plugins/custom-plugin</file>
+	<file>themes/custom-theme</file>
 
 	<!-- Don't sniff the following directories or file types. -->
 	<exclude-pattern>/build/*</exclude-pattern>

@@ -1,0 +1,16 @@
+*.min.js
+!/.*.js
+
+build/
+node_modules/
+vendor/
+dist/
+
+mu-plugins/
+uploads/
+
+plugins/*
+!/plugins/custom-plugin/
+
+themes/*
+!/themes/custom-theme/

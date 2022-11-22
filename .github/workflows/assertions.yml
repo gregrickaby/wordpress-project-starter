@@ -41,18 +41,8 @@ jobs:
           node-version: "lts/*"
           cache: "npm"
 
-      - name: Lint Plugin
-        run: |
-          cd plugins/custom-plugin
-          composer install
-          npm i
-          npm run lint
-          composer run lint
+      - name: Install Dependencies
+        run: npm i
 
-      - name: Lint Theme
-        run: |
-          cd themes/custom-theme
-          composer install
-          npm i
-          npm run lint
-          composer run lint
+      - name: Lint
+        run: npm run lint

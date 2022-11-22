@@ -22,28 +22,6 @@ For a new project, delete the `wp-content` directory and clone this repository i
 git clone https://github.com/gregrickaby/wordpress-project-starter wp-content
 ```
 
-Run `composer install && npm install`
-
----
-
-## Usage
-
-The root directory holds a minimal set of configs on purpose.
-
-`composer.json` is simply for installing WordPress plugins via Composer for the project.
-
-`package.json` is for installing [Lefthook](https://www.npmjs.com/package/lefthook), which handles pre-commit hooks for git.
-
-`.nvmrc` is for configuring NVM-- the Node Version Manager.
-
-`lefthook.yml` is for configuring Lefthook.
-
-`.gitignore` is for ignoring files that should not be committed to the repository.
-
----
-
-## Plugin & Theme Development
-
-The `plugins/custom-plugin` directory holds a fully working custom plugin, and `themes/custom-theme` holds a fully working custom theme. Both with their own set of config and linting built upon [WordPress Scripts](https://www.npmjs.com/package/@wordpress/scripts).
+Run `npm i` to install the dependencies.
 
 ---

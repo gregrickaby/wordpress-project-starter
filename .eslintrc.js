@@ -1,7 +1,11 @@
 module.exports = {
-	extends: ['plugin:@wordpress/eslint-plugin/recommended'],
+	extends: [ 'plugin:@wordpress/eslint-plugin/recommended' ],
 	parserOptions: {
 		ecmaVersion: 2021,
+		requireConfigFile: false,
+		babelOptions: {
+			presets: [ require.resolve( '@wordpress/babel-preset-default' ) ],
+		},
 	},
 	root: true,
 	env: {
