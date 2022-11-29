@@ -71,7 +71,7 @@ function setup() {
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'build/index.css' );
 }
-add_action( 'after_setup_theme', 'setup' );
+add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
 
 /**
  * Register widget area.
@@ -109,7 +109,7 @@ function scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'scripts' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\scripts' );
 
 /**
  * Only load block styles when they're rendered.
@@ -138,4 +138,4 @@ add_filter( 'xmlrpc_enabled', '__return_false' );
 function cors_control() {
 	header( 'Access-Control-Allow-Origin: *' );
 }
-add_action( 'rest_api_init', 'cors_control' );
+add_action( 'rest_api_init', __NAMESPACE__ . '\cors_control' );
